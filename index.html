@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/miu.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+
+    <title>miumiu</title>
+    <script src="https://kit.fontawesome.com/1a425518fe.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/miu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="banner">
+            <div class="container">
+                <video autoplay muted palysinline loop src="./img/loop_DT1.webm">
+                </video>
+                <header class="header-area">
+                    <ul class="head-l">
+                        <li data-alt="tab1">
+                            <a href="#none" class="menu">COLLECTIONS</a>
+                        </li>
+                        <li data-alt="tab2">
+                            <a href="#none" class="menu">NEW PRODUCT</a>
+                        </li>
+                       
+                        <li data-alt="tab3">
+                            <a href="#none" class="menu">BAGS</a>
+                        </li>
+                        <li data-alt="tab4">
+                            <a href="#none" class="menu">WANDER</a>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <a href="#none" class="header-logo">
+                            <img src="./img/miu-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="head-r">
+                        <div class="list" id="lgi">LOGIN</div>
+                        <a href="#none">
+                            <div class="list">CART</div>
+                        </a>
+                        <a href="#none">
+                            <div class="list">SEARCH</div>
+                        </a>
+                        
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </div>
+                   
+                    
+                    
+                </header>
+                
+                
+                <!-- <div class="modal">
+                    
+                    
+                    <div class="modal-box">
+                        <div class="login-box">
+                            <div class="login-id">
+                                <label for="email-id">아이디</label>
+                            <input type="email" class="modal-id">
+                            </div>
+                            <div class="login-ps">
+                                <label for="password-pw">비밀번호</label>
+                            <input type="password" class="modal-ps">
+                            
+                            </div>
+                            <button type="submit" class="btn btn-primary">로그인</button>
+                            
+                            
+                        </div>
+                        <div class="bg"></div>
+                    </div>
+                </div> -->
+                
+
+                <div class="sub-menu-box">
+                    <a id="tab1" href="#none" class="sub-menu-detail">
+                            
+                        <b>COLLECTIONS</b>
+
+                        <ul class="sub-menu-head">
+                            <li class="sub-menu-body">
+                                <img src="./img/sub1.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>PANAMA COTTON 
+                                        BOMBER JACKET</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub2.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CHINI BLOUSON HACKET</p> 
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub3.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CASHMERE KNIT CARDIGAN</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub4.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>DENIM BLOUSON JACKET</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a id="tab2" href="#none" class="sub-menu-detail">
+                            
+                        <b>NEW PRODUCT</b>
+                        <ul class="sub-menu-head">
+                            
+                            <li class="sub-menu-body">
+                                <img src="./img/sub2-1.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>PANAMA COTTON 
+                                        BOMBER JACKET</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub2-2.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CHINI BLOUSON HACKET</p> 
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub2-3.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CASHMERE KNIT CARDIGAN</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub2-4.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>DENIM BLOUSON JACKET</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a id="tab3"  href="#none" class="sub-menu-detail">
+                            
+                        <b>BAGS</b>
+                        <ul class="sub-menu-head">
+                            
+                            <li class="sub-menu-body">
+                                <img src="./img/sub3-1.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>PANAMA COTTON 
+                                        BOMBER JACKET</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub3-2.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CHINI BLOUSON HACKET</p> 
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub3-3.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CASHMERE KNIT CARDIGAN</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub3-4.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>DENIM BLOUSON JACKET</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                    <a  id="tab4" href="#none" class="sub-menu-detail">
+                            
+                        <b>WANDER</b>
+                        <ul class="sub-menu-head">
+                            
+                            <li class="sub-menu-body">
+                                <img src="./img/sub4-1.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>PANAMA COTTON 
+                                        BOMBER JACKET</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub4-2.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CHINI BLOUSON HACKET</p> 
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub4-3.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>CASHMERE KNIT CARDIGAN</p>
+                                </div>
+                            </li>
+                            <li class="sub-menu-body">
+                                <img src="./img/sub4-4.jpg" alt="">
+                                <div class="sub-menu-body-txt">
+                                    <p>DENIM BLOUSON JACKET</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="mobile-hamburger-menu">
+                    <div class="detail-menu">
+                        <h1><a href="#none">COLLECTIONS</a></h1>
+                    <h1><a href="#none">NEW PRODUCT</a></h1>
+                    <h1><a href="#none">BAGS</a></h1>
+                    <h1><a href="#none">WANDER</a></h1>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+                <div class="sec1">
+                    <div class="sec1-t-txt">
+                        <h1>아이코닉 백</h1>
+                        <p>모든룩 보기</p>
+                    </div>
+
+                    <div class="swiper-con">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-1.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-2.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-3.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-4.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-5.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-6.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-7.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                                <a href="#none" class="sec1-photo swiper-slide">
+                                    <img src="./img/sec1-8.jpg" alt="">
+                                    <p>아르카디 마테라쎄 나파 가죽백</p>
+                                </a>
+                            
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec2">
+                    <div class="sec2-wrap">
+                        <a href="#none" class="sec2-photo">
+                            <img src="./img/sec2-1.jpg" alt="">
+                            <div class="sec2-txt">
+                                <p>의류</p>
+                                <p>구매하기</p>
+                            </div>
+                            
+                        </a>
+                        <a href="#none" class="sec2-photo">
+                            <img src="./img/sec2-2.jpg" alt="">
+                            <div class="sec2-txt">
+                                <p>슈즈</p>
+                                <p>구매하기</p>
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sec3">
+                    <div class="sec3-wrap">
+                        <video autoplay muted playsline loop src="./img/loop_DT2.webm"></video>
+                        <div class="sec3-txt">
+                            <p>가방</p>
+                            <a href="#none">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insta_area">
+                    <div class="insta_head">
+                        <div class="insta_logo">
+                            <img src="./img/insta-logo.jpg" alt="">
+                        </div>
+                        <div class="insta_info">
+                            <div class="insta_info_txt1">
+                                <p>게시물 <b>6655</b></p>
+                                <p>팔로워 <b>1133k</b></p>
+                                <p>팔로우 <b>8</b></p>
+                            </div>
+                            <div class="insta_info_txt2">
+                                <i class="fa-solid fa-link"></i>
+                                <a href="#none">clicklinkin.bio/miumiu</a>
+                            </div>
+                            <div class="insta_info_txt3">
+                                <a href="#none" class="follow">팔로우</a>
+                                <a href="#none" class="msg">메세지</a>
+                            </div>
+                        </div>
+                        <div class="insta_story">
+                            <div class="story">
+                                <img src="./img/story_1.jpg" alt="">
+                                <p>SS24 ADV</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story_2.jpg" alt="">
+                                <p>Literary Club</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story_3.jpg" alt="">
+                                <p>Focus on</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story_4.jpg" alt="">
+                                <p>Churchs</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story5.jpg" alt="">
+                                <p>MMWT #27</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story_6.jpg" alt="">
+                                <p>FW24 Show</p>
+                            </div>
+                            <div class="story">
+                                <img src="./img/story_7.jpg" alt="">
+                                <p>New Balance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insta_main">
+                        <div class="insta_btn">
+                            <a href="#none" class="insta_btn_1" >게시물</a>
+                            <a href="#none" class="insta_btn_2">릴스</a>
+                        </div>
+                        <div class="insta_body">
+                            <div class="insta_feed active">
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img1.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>8322</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>26</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img2.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>7122</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>114</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img3.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>9122</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>83</b>
+                                    </div>
+                                </a><a href="#none" class="feed_1">
+                                    <img src="./img/story_img4.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>716</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>66</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img5.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>1412</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>35</b>
+                                    </div>
+                                </a><a href="#none" class="feed_1">
+                                    <img src="./img/story_img6.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>894</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>8</b>
+                                    </div>
+                                </a><a href="#none" class="feed_1">
+                                    <img src="./img/story_img7.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>9171</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>27</b>
+                                    </div>
+                                </a><a href="#none" class="feed_1">
+                                    <img src="./img/story_img8.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>3072</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>13</b>
+                                    </div>
+                                </a><a href="#none" class="feed_1">
+                                    <img src="./img/story_img9.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>7716</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>34</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img10.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>1359</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>24</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img11.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>8462</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>37</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="feed_1">
+                                    <img src="./img/story_img12.jpg" alt="">
+                                    <div class="feed_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>5684</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>47</b>
+                                    </div>
+                                </a>
+                                
+                                
+                            </div>
+                            <div class="insta_reels">
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels1.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>8142</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>21</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>111.3만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels2.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>7462</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>26</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>98.5만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels3.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>1672</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>20</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>41.7만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels4.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>2487</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>12</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>210.8만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels5.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>4685</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>24</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>75.1만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels6.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>6687</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>36</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>11.4만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels7.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>1579</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>3</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>98만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels8.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>6895</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>29</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>116만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels9.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>2477</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>11</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>71.4만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels10.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>3568</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>74</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>211.4만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels11.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>2622</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>36</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>21.8만</b>
+                                    </div>
+                                </a>
+                                <a href="#none" class="reels_1">
+                                    <img src="./img/reels12.jpg" alt="">
+                                    <div class="reels_txt">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <b>2547</b>
+                                        <i class="fa-brands fa-facebook-messenger"></i>
+                                        <b>13</b>
+                                    </div>
+                                    <div class="play_btn">
+                                        <i class="fa-solid fa-play"></i>
+                                        <b>27.3만</b>
+                                    </div>
+                                </a>
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="sec4">
+                    <div class="club">
+                        <h1>MIU MIU CLUB</h1>
+                    </div>
+                    <div class="sec4-wrap">
+                        <div class="sec4-photo-1">
+                            <a href="#none" class="sec4-photo">
+                                <img src="./img/sec4-1.jpg" alt="">
+                                <div class="sec4-txt">
+                                    <p>Miu Miu Live</p>
+                                </div>
+                                
+                            </a>
+                            <a href="#none" class="sec4-photo">
+                                <img src="./img/sec4-2.jpg" alt="">
+                                <div class="sec4-txt">
+                                    <p>Arcadie</p>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="sec4-photo-2">
+                            <a href="#none" class="sec4-photo">
+                                <img src="./img/sec4-3.jpg" alt="">
+                                <div class="sec4-txt">
+                                    <p>Miu Miu Lete</p>
+                                </div>
+                                
+                            </a>
+                            <a href="#none" class="sec4-photo">
+                                <img src="./img/sec4-4.jpg" alt="">
+                                <div class="sec4-txt">
+                                    <p>Miu Miu Select</p>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <footer>
+                    <div class="footer-txt">
+                        <div class="f-box">
+                            <b>ABOUT US</b>
+                            <a href="#none">
+                                <P>STORE LOCATOR</P>
+                                <P>PRADA GROUP</P>
+                                <P>SUSTAINABILITY</P>
+                                <P>FONDAZIONE PRADA</P>
+                                <P>WORK WITH US</P>
+                            </a>
+                            
+                        </div>
+                        <div class="f-box">
+                            <b>CLIENT SERVICE</b>
+                            <a href="#none">
+                                <P>MIU MIU SERVICES</P>
+                                <P>CONTACT US</P>
+                                <P>FAQS</P>
+                                <P>RETURNS</P>
+                                <P>DOWNLOAD</P>
+                            </a>
+                           
+                        </div>
+                        <div class="f-box">
+                            <b>LEGAL TERMS AND CONDITIONS</b>
+                            <a href="#none">
+                                <P>Legal Notice</P>
+                            <P>Privacy Policy</P>
+                            <P>Cookie Policy</P>
+                            <P>Purchase Terms</P>
+                            <P>Sitemap</P>
+                            </a>
+                            
+                        </div>
+                        <div class="f-box">
+                            <b>CATEGORIES</b>
+                            
+                            <P>Bags</P>
+                            <P>Accessories</P>
+                            <P>Ready To Wear</P>
+                            <P>Shoes</P>
+                            <P>Eyewear</P>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="mobile-f">
+                        <div class="m">
+                          <div class="m-sub">
+                            <b>ABOUT US</b>
+                            <svg width="20px" height="20px" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9629 44.1831L37.8416 22.3045C39.0131 21.1329 40.9126 21.1329 42.0842 22.3045L63.9629 44.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.9629 60.1831L37.8416 38.3045C39.0131 37.1329 40.9126 37.1329 42.0842 38.3045L63.9629 60.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            
+                          </div>
+                            <div class="m-sub-txt">
+                                <a href="#none">STORE LOCATOR</a>
+                                <a href="#none">PRADA GROUP</a>
+                                <a href="#none">SUSTAIN ABILITY</a>
+                                <a href="#none">FONDAZIONE PRADA</a>
+                                <a href="#none">WORK WITH US</a>
+                            </div>
+                        </div>
+                        <div class="m">
+                            <div class="m-sub">
+                                <b>CLIENT SERVICE</b>
+                                <svg width="20px" height="20px" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9629 44.1831L37.8416 22.3045C39.0131 21.1329 40.9126 21.1329 42.0842 22.3045L63.9629 44.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.9629 60.1831L37.8416 38.3045C39.0131 37.1329 40.9126 37.1329 42.0842 38.3045L63.9629 60.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="m-sub-txt">
+                                <a href="#none">STORE LOCATOR</a>
+                                <a href="#none">PRADA GROUP</a>
+                                <a href="#none">SUSTAIN ABILITY</a>
+                                <a href="#none">FONDAZIONE PRADA</a>
+                                <a href="#none">WORK WITH US</a>
+                            </div>
+                            
+                        </div>
+                        <div class="m">
+                            <div class="m-sub">
+                                <b>LEGAL TERMS AND CONDITIONS</b>
+                                <svg width="20px" height="20px" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9629 44.1831L37.8416 22.3045C39.0131 21.1329 40.9126 21.1329 42.0842 22.3045L63.9629 44.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.9629 60.1831L37.8416 38.3045C39.0131 37.1329 40.9126 37.1329 42.0842 38.3045L63.9629 60.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        
+                                <div class="m-sub-txt">
+                                    <a href="#none">LEGAL NOTICE</a>
+                                    <a href="#none">PRIVACY POLICY</a>
+                                    <a href="#none">COOKIE POLICY</a>
+                                    <a href="#none">PURCHASE TERMS</a>
+                                    <a href="#none">SITEMAP</a>
+                                </div>
+                        </div>
+                        <div class="m">
+                            <div class="m-sub">
+                                <b>CATEGORIES</b>
+                                <svg width="20px" height="20px" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9629 44.1831L37.8416 22.3045C39.0131 21.1329 40.9126 21.1329 42.0842 22.3045L63.9629 44.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.9629 60.1831L37.8416 38.3045C39.0131 37.1329 40.9126 37.1329 42.0842 38.3045L63.9629 60.1831" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="m-sub-txt">
+                                <a href="#none">BAGS</a>
+                                <a href="#none">ACCESSORIES</a>
+                                <a href="#none">READY TO WEAR</a>
+                                <a href="#none">SHOES</a>
+                                <a href="#none">EYE WEAR</a>
+                            </div>
+                        </div>
+                        
+                            
+                    
+                    </div>
+                   
+                    <div class="footer-logo">
+                        <img src="./img/miu-logo.svg" alt="">
+                    </div>
+                </footer>
+            
+        </div>
+    </div>
+</body>
+</html>

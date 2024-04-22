@@ -1,0 +1,1047 @@
+@charset "utf-8";
+
+
+.wrap{
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+    
+}
+.header-area{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #fff;
+   z-index: 999999999999999999999999999999999999999999;
+}
+.header-area.active{
+    height: 80px;
+}
+
+.head-l{
+    display: flex;
+    
+}
+.head-l li{
+    margin-left: 24px;
+}
+.logo{
+   width: 500px;
+   height: auto;
+   position: absolute;
+   /* top: 10; */
+   transition: 0.3s;
+   left: 50%;
+   transform: translateX(-50%);
+
+}
+
+.logo.active{
+    /* 로고 줄이는 이벤트 할때는 스케일이 아닌 저비높이값을 수정해야함 */
+    width: 300px;
+}
+.head-r{
+    display: flex;
+    
+}
+.head-r .list{
+    margin-right: 24px;
+}
+.hamburger{
+    
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    right: 7%;
+    top: 35%;
+    display: none;
+    margin-right: 16px;
+    
+}
+.hamburger span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    
+    
+}
+.hamburger span:nth-child(1).active{
+    transform: rotate(45deg);
+    top: 50%;
+    position: absolute;
+}
+.hamburger span:nth-child(2).active{
+    opacity: 0;
+}
+.hamburger span:nth-child(3).active{
+    transform: rotate(-45deg);
+    top: 50%;
+    position: absolute;
+}
+/* ---------------------- */
+.mobile-hamburger-menu{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    z-index: 9999999;
+    margin-top: 3px;
+}
+.mobile-hamburger-menu.active{
+    top: 7%;
+}
+
+.detail-menu{
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+.detail-menu h1{
+    font-size: 2.5rem;
+    line-height: 3.5;
+    
+}
+
+/* ----------------------- */
+.sec1{
+    width: 100%;
+    height: auto;
+   margin: 0 auto;
+   overflow: hidden;
+   padding: 0 32px;
+   margin-bottom: 64px;
+   
+}
+.sec1-t-txt{
+    width: 87%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.sec1-t-txt p{
+    margin-right: 25px;
+    cursor: pointer;
+}
+.sec1-photo{
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+   
+    
+}
+.sec1-photo p{
+    margin-top: 8px;
+}
+.sec1-photo:nth-last-child(){
+    margin-right: -50px;
+}
+.swiper-con{
+    position: relative;
+    padding-bottom: 50px;
+    width: 87%;
+    margin: 0 auto;
+    
+}
+.swiper-warpper{
+    display: flex;
+    width: 4350px;
+}
+
+span.swiper-pagination-bullet{
+    background-color: rgb(32, 32, 32);
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+}
+span.swiper-pagination-bullet-active {
+    background-color: rgb(146, 146, 145);
+    width: 30px; /* 선택된 bullet의 너비를 6px 늘립니다. */
+    border-radius: 30px;
+  }
+
+.sec2{
+    width: 100%;
+    padding: 0 16px;
+}
+
+.sec2-wrap{
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    margin-bottom: 150px;
+}
+.sec2-photo{
+    width: 50%;
+    height: auto;
+    position: relative;
+    
+    background-color: #000;
+}
+.sec2-photo:nth-child(1){
+    margin-right: 32px;
+}
+
+.sec2-photo img{
+    transition: 0.3s;
+}
+.sec2-txt{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 12px;
+    color: #fff;
+    
+}
+.sec2-txt p{
+    display: flex;
+    justify-content: center;
+}
+.sec2-txt p:nth-child(even){
+    border-bottom: 1px solid #fff;
+}
+.sec2-photo img:nth-child(1).active{
+    
+    
+    opacity: 0.7;
+}
+.sec2-photo img:nth-child(2).active{
+    
+    
+    opacity: 0.7;
+}
+.sec3{
+    width: 100%;
+    margin-bottom: 64px;
+}
+.sec3-wrap{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.sec3-txt{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 12px;
+    color: #fff;
+}
+.sec3-txt p{
+    display: flex;
+    justify-content: center;
+}
+.sec3-txt a{
+    border-bottom: 1px solid #fff;
+}
+
+.sec4{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding: 0 32px;
+}
+.club{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.club h1{
+    font-size: 3.75rem;
+}
+.sec4{
+    margin-bottom: 64px;
+}
+.sec4-wrap{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.sec4-photo{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.sec4-photo:nth-child(4){
+    margin-right: 0;
+}
+.sec4-photo img{
+    transition: 0.3s;
+    
+}
+
+.sec4-txt{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+}
+.sec4-photo img.active{
+    scale: 1.2;
+}
+.sec4-photo-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4-photo-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+}
+.footer-txt{
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 32px;
+    margin-bottom: 64px;
+}
+.footer-txt .f-box b{
+    line-height: 4;
+}
+.f-box p{
+    cursor: pointer;
+}
+
+.footer-txt .f-box{
+    
+   line-height: 2.5;
+}
+.footer-logo{
+    padding: 0 16px;
+}
+.icon{
+    height: 50px;
+    width: auto;
+    float: right;
+}
+.icon img{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.icon img:nth-child(1){
+    scale: 1.5;
+}
+.sub-menu-box{
+    position: fixed;
+    left: 0;
+    /* 서브메뉴 이벤트시 서브메뉴 박스가 head li를 가리고 있어 li에 호버되지 않아 이벤트가 발생되지 않았었음 */
+    /* 서브메뉴 이벤트시 헤더의 높이값 만큼 빼줘어 헤더 밑에 나타나도록 설정하기 */
+    top: 80px;
+    transition: 0.3s;
+    /* 서브메뉴 박스의 너비,높이값을 지정해줘야함 */
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    z-index: -1;
+}
+.sub-menu-box.active{
+    opacity: 1;
+    z-index: 9999999;
+
+}
+.sub-menu-detail{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    z-index: 99;
+}
+
+
+.sub-menu-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100vw;
+    height: 250px;
+    /* opacity: 0; */
+}
+/* .sub-menu-head.active{
+    opacity: 1;
+} */
+.sub-menu-detail{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    opacity: 0;
+    z-index: -1;
+}
+.sub-menu-detail b{
+    font-size: 2.1rem;
+    padding: 32px;
+    line-height: 3;
+}
+.sub-menu-detail.active{
+    opacity: 1 
+    
+    
+}
+
+
+.sub-menu-body{
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 60px;
+}
+.sub-menu-body img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .sub-menu.collection,
+.sub-menu.bags,
+.sub-menu.wander{
+    display: none;
+} */
+.sub-menu-body-txt{
+    padding-top: 16px;
+}
+.modal-box{
+    width: 100%;
+    height: 100%;
+}
+.mobile-f{
+    display: none;
+    width: 87%;
+    height: auto;
+    padding: 0 32px;
+    margin-bottom: 64px;
+    margin: 0 auto;
+}
+.m-sub-txt{
+    display: none;
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.m-sub{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.m-sub b{
+    font-size: 1.5rem;
+}
+.m-sub svg{
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+}
+.m-sub-txt.active{
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+
+.modal-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.bg{
+    
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.login-box{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightgrey;
+    width: 30%;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 300px;
+    padding-left: 32px;
+    opacity: 0;
+    
+}
+.login-box.active{
+    opacity: 1;
+    z-index: 999999999999;
+}
+.bg.active{
+    opacity: 1;
+    z-index: 9999999999999999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#lgi{
+    cursor: pointer;
+}
+.login-id,
+.login-ps
+{
+    width: 250px;
+    /* height: 30px; */
+    /* margin-top: 15px; */
+    padding-top: 16px;
+   
+    
+    
+}
+.modal-id,
+.modal-ps{
+    width: 100%;
+    height: 80%;
+    /* margin-top: 15px; */
+    display: inline-block;
+}
+.btn{
+ margin-top: 16px;
+ position: absolute;
+ bottom: 15%;
+ left: 10%;
+ transform: translateX(-50%);
+}
+
+
+/* -------insta----------- */
+
+.insta_area{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+.insta_head{
+    line-height: 2;
+}
+.insta_logo{
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #000;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background: linear-gradient(24deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 49%, rgba(252, 176, 69, 1) 100%);
+}
+.insta_info{
+    width: 50%;
+    margin: 0 auto;
+    
+    
+}
+.insta_info_txt1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.insta_info_txt2{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.insta_info_txt2 i{
+    margin-right: 8px;
+    
+}
+.insta_info_txt3{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    
+}
+.follow{
+    background-color: #05DBF2;
+    color: #fff;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    transition: 0.3s;
+}
+.follow:hover{
+    background-color: #0FB2F2;
+}
+.msg{
+    transition: 0.3s;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg:hover{
+    background: #6a6a6a;
+    color: #fff;
+}
+.insta_story{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+}
+.insta_story img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    
+}
+.story{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.insta_btn{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.insta_main{
+    border-top: 1px solid #afaeae;
+    
+}
+.insta_main a{
+    margin-top: 16px;
+}
+/* --------feed-------- */
+
+
+
+.feed_txt{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.feed_txt b{
+    margin-right: 8px;
+}
+.insta_feed img:hover{
+
+    filter: brightness(50%);
+    
+}
+.feed_txt.active{
+
+    display: block;
+}
+
+
+.insta_feed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed_1{
+    
+    position: relative;
+    width: 32.5%;
+    height: 0;
+    padding-bottom: 32.5%;  
+}
+.feed_1 img{
+    position: absolute;
+}
+.reels_txt b{
+    margin-right: 8px;
+}
+
+/* ---------reels------- */
+.reels_txt{
+
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.reels_txt i{
+    margin-right: 8px;
+}
+.insta_reels img:hover{
+
+    filter: brightness(50%);
+    
+}
+.reels_txt.active{
+    display: flex;
+}
+
+
+.insta_body .insta_reels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.insta_body .insta_reels.active{
+    display: flex;
+}
+.insta_body .insta_feed.active{
+    display: flex;
+}
+/* .insta_body .insta_feed.active{
+    display: none;
+} */
+.insta_body .reels_1{
+
+    position: relative;
+    width: 32.5%;
+    height: 0;
+    padding-bottom: 32.5%;  
+}
+.reels_1 img{
+    position: absolute;
+}
+.play_btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 22px;
+    padding: 16px;
+}
+.play_btn i{
+    margin-right: 8px;
+}
+.play_btn.active{
+    opacity: 0;
+}
+.insta_body .insta_reels,
+.insta_body .insta_feed{
+    display: none;
+}
+.insta_btn_1{
+    color: #1a1a1a;
+}
+.insta_btn_1.active{
+    color: #afaeae;
+}
+.insta_btn_2{
+    color: #afaeae;
+}
+.insta_btn_2.active{
+
+    color: #1a1a1a;
+}
+@media(max-width:1500px){
+    .head-l{
+        display: none;
+    }
+    .head-r{
+        position: absolute;
+        right: 5%;
+    }
+    .header-area{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width:1300px){
+    .insta_story img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    
+}
+@media(max-width:1200px){
+    .logo{
+        position: absolute;
+        left: 30%;
+        width: 400px;
+    }
+    .footer-txt{
+        display: none;
+    }
+    .mobile-f{
+        display: block; 
+    }
+
+}
+@media(max-width:1150px){
+    .insta_area{
+        width: 70%;
+    }
+    .play_btn{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1088px){
+    .sec4-wrap{
+        display: block;
+    }
+    .sec4-photo-1{
+        margin-bottom: 16px;
+    }
+    .sec4-photo{
+        width: 50%;
+        height: calc(100% - 16px);
+    }
+    .sec4-txt{
+        font-size: 1.2rem;
+    }
+    .club h1{
+        font-size: 2.7rem;
+    }
+    .sec2-wrap{
+        margin-bottom: 80px;
+    }
+}
+@media(max-width:950px){
+    .insta_area{
+        width: 80%;
+    }
+    .sec4-wrap{
+        width: 100%;
+    }
+}
+@media(max-width:850px){
+    .sec1-photo p{
+        font-size: 14px;
+    }
+    .logo{
+        width:200px;
+        height: auto;
+        left: 20%;
+        margin-left: 16px;
+        
+    }
+    .head-r{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .mobile-sub-menu{
+        display: block;
+    }
+    .mobile-hamburger-menu{
+        display: block;
+    }
+@media(max-width:750px){
+    .detail-menu h1{
+        font-size: 1.5rem;
+    }
+}
+.insta_area{
+    width: 90%;
+}
+.insta_story img{
+    width: 60px;
+    height: 60px;
+}
+.story p{
+    font-size: 12px;
+}
+.insta_info{
+    width: 65%;
+}
+    
+}
+@media(max-width:671px){
+    .sec4-photo-1,
+    .sec4-photo-2{
+        display: block;
+    }
+    .sec4-photo{
+        width: 100%;
+        margin-bottom: 64px;
+    }
+    .logo.active{
+        
+        width: 250px;
+    }
+    .hamburger span{
+        margin-bottom: 8px;
+    }
+    .sec2-wrap{
+        width: 100%;
+    }
+    .container video{
+        margin-top: 100px;
+    }
+    .sec1 h1{
+        font-size: 1.2rem;
+    }
+    .sec1 p{
+        font-size: 16px;
+        margin-right: 0;
+    }
+    .container {
+        
+        margin-bottom: 80px;
+    }
+    .detail-menu h1{
+        font-size: 1.2rem;
+    }
+    .play_btn{
+        font-size: 0.9rem;
+    }
+    
+}
+@media(max-width:570px){
+    .insta_area{
+        width: 100%;
+        padding: 0 32px;
+    }
+    .play_btn{
+        padding: 16px 16px 8px 8px;
+    }
+    
+   
+    .insta_story img{
+        width: 50px;
+        height: 50px;
+    }
+    .story p{
+        font-size: 10px;
+    }
+    .insta_info{
+        width: 80%;
+    }
+    .insta_story{
+        width: auto;
+    }
+}
+@media(max-width:500px){
+    .logo.active{
+        
+        width: 200px;
+    }
+    .header-area{
+        height: 70px;
+    }
+    
+    .swiper-con{
+        width: 100%;
+        
+    }
+    
+    
+}
+@media(max-width:450px){
+    .detail-menu h1{
+        font-size: 1rem;
+    }
+    .story{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .insta_story img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    
+    .insta_info_txt3{
+        font-size: 14px;
+    }
+}
+@media(max-width:426px){
+    .logo {
+        
+        left: 23%;
+        
+    }
+    .insta_info_txt1{
+        text-align: center;
+    }
+    
+}
+@media(max-width:400px){
+    .logo.active{
+        
+        width: 170px;
+    }
+    .play_btn{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:393px){
+    .detail-menu h1{
+        font-size:0.9rem;
+    }
+}
+
+
+
+
+ 
